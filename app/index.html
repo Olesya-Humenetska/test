@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixetic design agency Test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<main class="wrapper">
+    <section class="form-registration">
+        <form class="form-registration__register" method="post" action="/">
+            <h3 class="form-title">Fill in the form</h3>
+            <div class="form-personal">
+                <div class="form-personal__left">
+                    <div class="formInputs__input half-width">
+                        <label class="formInput formInput__label">Name
+                            <input type="text" class="formInput__input" value="" name="name" id="name"
+                                   tabindex="1">
+                        </label>
+                    </div>
+
+                    <div class="formInputs__input half-width">
+                        <label class="formInput formInput__label">Surname
+                            <input type="text" class="formInput__input" value="" name="surname" id="surname"
+                                   tabindex="2">
+                        </label>
+                    </div>
+                    <div class="formInputs__input formInputs__relative">
+                        <label class="formInput formInput__label">Company name
+                            <input type="text" class="formInput__input" value="" name="Company name"
+                                   id="сompany-name" tabindex="3">
+                        </label>
+                        <label class="formInput formInput__absolute">+ Add logo
+                            <input type="file" class="formInput__input formInput__input--hide" value=""
+                                   name="myFile" id="add-logo"
+                                   tabindex="3">
+                        </label>
+                    </div>
+                    <div class="formInputs__input">
+                        <label class="formInput formInput__label">Email
+                            <input type="email" class="formInput__input formInput__input--email" value="" name="email"
+                                   id="email"
+                                   tabindex="4">
+                        </label>
+                    </div>
+                    <div class="formInputs__input">
+                        <label class="formInput formInput__label">Phone number
+                            <input type="number" class="formInput__input" value="" name="phone" id="phone"
+                                   tabindex="5">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-personal__right">
+                    <div class="formInputs__input">
+                        <label class="formInput formInput__label" for="country">Country</label>
+                            <div class="formInput-select--wrap">
+                                <select name="country" id="country" class="formInput__input formInput__input--select"
+                                        tabindex="6">
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="USA">USA</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="formInputs__input half-width">
+                        <label class="formInput formInput__label">City
+                            <input type="text" class="formInput__input" value="" id="city" name="city"
+                                   tabindex="7">
+                        </label>
+                    </div>
+                    <div class="formInputs__input half-width">
+                        <label class="formInput formInput__label">Postal code
+                            <input type="number" class="formInput__input" value="" name="Postal code"
+                                   id="postal_code" tabindex="8">
+                        </label>
+                    </div>
+
+                    <div class="formInputs__input">
+                        <label class="formInput formInput__label">Address
+                            <input type="text" class="formInput__input" value="" name="address" id="address"
+                                   tabindex="9">
+                        </label>
+                    </div>
+                    <div class="formInputs__checkbox">
+                        <input type="checkbox" name="rules" id="rules" value="1" tabindex="10"
+                               class="toCheck__input">
+
+                        <label class="toCheck" for="rules">
+                                    <span class="toCheck_svg">
+                                        <svg width="11px" height="10px" viewbox="0 0 12 10"><polyline
+                                                points="1.5 6 4.5 9 10.5 1"></polyline></svg>
+                                    </span>
+                            <span class="toCheck__content">I accept Terms and Service</span>
+                        </label>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--/////////////////////////////////////form Shipping & billing details///////////////////////-->
+            <div class="wrapper_billing">
+                <h3 class="form-title">Shipping & billing details</h3>
+                <p class="form-detail">You can change the shipping method</p>
+                <div class="billing-tabset">
+                    <div class="billing-tab-panels">
+                        <!-- Tab 1 -->
+                        <section id="section1" class="tab-panel">
+                            <input type="radio" name="sections" id="tab1" aria-controls="standard">
+                            <label for="tab1" class="tab-panel--label">
+                                <span class="icon-tab">
+                                    <img src="images/truck.svg" alt="truck">
+                                </span>
+                                Standard
+                                <br> <span class="result">5$ in 10 days</span></label>
+
+                            <div class="section-content">
+                                <div class="section-content__payment">
+                                    <div class="section-content__title">Payment method</div>
+                                    <div class="section-col">
+                                        <a class="section-col__square" href="https://www.americanexpress.com/" target="_blank">
+                                            <img src="images/american_express.svg" alt="american express">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.mastercard.ua/uk-ua.html" target="_blank">
+                                            <img src="images/mastercard_color.svg" alt="mastercard color">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.visa.com.ua/uk_UA" target="_blank">
+                                            <img src="images/visa_b&w.svg" alt="visa">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.discover.com/" target="_blank">
+                                            <img src="images/discover.svg" alt="discover">
+                                        </a>
+                                    </div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://www.paypal.com/ru/home" target="_blank">
+                                            <img src="images/paypal_b&w.svg" alt="paypal">
+                                        </a>
+                                    </div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://pay.amazon.com/" target="_blank">
+                                            <img src="images/amazonpay_b&w.svg" alt="amazonpay">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="section-content__card">
+                                    <div class="section-content__title">Card details</div>
+                                    <div class="card-wrap">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Tab 2 -->
+                        <section id="section2" class="tab-panel">
+                            <input type="radio" name="sections" id="tab2" aria-controls="express" checked>
+                            <label for="tab2" class="tab-panel--label">
+                                <span class="icon-tab">
+                                <img src="images/plane_logo.svg" alt="plane logo">
+                                </span>
+                                Express
+                                <br> <span class="result">25$ in 5 days</span></label>
+                            <div class="section-content">
+                                <div class="section-content__payment">
+                                    <div class="section-content__title">Payment method</div>
+                                    <div class="section-col">
+                                        <a class="section-col__square" href="https://www.americanexpress.com/" target="_blank">
+                                            <img src="images/american_express.svg" alt="american express">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.mastercard.ua/uk-ua.html" target="_blank">
+                                            <img src="images/mastercard_color.svg" alt="mastercard color">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.visa.com.ua/uk_UA" target="_blank">
+                                            <img src="images/visa_b&w.svg" alt="visa">
+                                        </a>
+                                        <a class="section-col__square" href="https://www.discover.com/" target="_blank">
+                                            <img src="images/discover.svg" alt="discover">
+                                        </a>
+                                    </div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://www.paypal.com/ru/home" target="_blank">
+                                            <img src="images/paypal_b&w.svg" alt="paypal">
+                                        </a>
+                                    </div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://pay.amazon.com/" target="_blank">
+                                            <img src="images/amazonpay_b&w.svg" alt="amazonpay">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="section-content__card">
+                                    <div class="section-content__title">Card details</div>
+                                    <div class="card-wrap">
+                                        <div class="card-number">
+                                            <label class="card-number--label card---label" for="card-number-field">Card number</label>
+                                            <div class="card-number--fields">
+                                                <input id="card-number-field" class="card-number--input" type="text"
+                                                       maxlength="4">
+                                                <input class="card-number--input" type="text" maxlength="4">
+                                                <input class="card-number--input" type="text" maxlength="4">
+                                                <input class="card-number--input" type="text" maxlength="4">
+                                            </div>
+                                        </div>
+
+                                        <div class="card-expiration">
+                                            <label class="card-expiration--label card---label"
+                                                   for="card-expiration-field">Expiration date</label>
+                                            <input id="card-expiration-field" autocomplete="cc-exp" type="tel"
+                                                   maxlength="7" class="card-expiration--input" value="">
+                                        </div>
+
+                                        <div class="card-cvc">
+                                            <label class="card-cvc--label card---label"
+                                                   for="card-cvc-field">CVC/CVV</label>
+                                            <input id="card-cvc-field" autocomplete="off" type="tel" maxlength="3"
+                                                   class="card-cvc--input" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Tab 3 -->
+                        <section id="section3" class="tab-panel">
+                            <input type="radio" name="sections" id="tab3" aria-controls="premium">
+                            <label for="tab3" class="tab-panel--label">
+                                <span class="icon-tab">
+                                <img src="images/shape.svg" alt="shape logo">
+                            </span>
+                                Premium
+                                <br> <span class="result">50$ for tomorrow</span></label>
+                            <div class="section-content">
+                                <div class="section-content__payment">
+                                    <div class="section-content__title">Payment method</div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://www.paypal.com/ru/home" target="_blank">
+                                            <img src="images/paypal_b&w.svg" alt="paypal">
+                                        </a>
+                                    </div>
+                                    <div class="section-col">
+                                        <a class="section-col__rectangle" href="https://pay.amazon.com/" target="_blank">
+                                            <img src="images/amazonpay_b&w.svg" alt="amazonpay">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="section-content__card">
+                                    <div class="section-content__title">Card details</div>
+                                    <div class="card-wrap">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--/////////////////////////////////////END form Shipping & billing details///////////////////////-->
+            <div class="form-action">
+                <button class="actionButton btn-gradient" type="submit" id="btn-submit">submit</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
